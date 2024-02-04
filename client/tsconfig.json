@@ -12,17 +12,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".",
     "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "baseUrl": ".",
     "paths": {
       "@/app/*": ["app/*"],
       "@/*": ["./*"],
-      "@/ui/*": ["./app/ui/*"]
+      "@/ui/*": ["./app/ui/*"],
+      "@/app/ui/fonts": ["./app/ui/fonts"]
     }
   },
   "include": [
